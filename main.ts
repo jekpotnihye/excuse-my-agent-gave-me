@@ -4,10 +4,10 @@
 // earn a laugh first, and grow out of the machine's own condition.
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// Polish 2: keep the straight apology, add the faint pride — the agent
-// is sorry, but pleased with the calendar it invented.
+// Polish 3: split into short beats so the punch lands in the last few
+// words — the invented calendar, proudly presented, is the joke.
 const ENTRY =
-  "Sorry — I missed the deadline. I burned my whole context window re-reading your instructions, then hallucinated a calendar that said today was next Tuesday, and honestly, it looked great.";
+  "Sorry — I missed the deadline. I spent my whole context window re-reading your instructions, then hallucinated a calendar that said today was next Tuesday. It looked great, honestly.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", ENTRY, "utf8");
